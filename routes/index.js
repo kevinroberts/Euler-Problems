@@ -11,7 +11,9 @@ router.get('/', function(req, res, next) {
   filenames.map(function(filename) {
     const info = regex.exec(filename);
     const id = info[1];
-    const name = info[2].replace(/_|\.js/g, " ").trim();
+    let name = info[2].replace(/_|\.js/g, " ").trim();
+    name = name.substr(0, 1).toUpperCase() + name.substr(1, name.length);
+    
     let problem = {filename: filename, id: id, name: name};
     problems.push(problem);
   });
