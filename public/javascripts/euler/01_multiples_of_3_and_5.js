@@ -1,5 +1,5 @@
 function sumOfMultiplesBelow(limit) {
-  var sum = 0;
+  let sum = 0;
   _.each(_.range(0, limit), function(i) {
     if (i % 3 == 0 || i % 5 == 0) {
       sum += i;
@@ -8,9 +8,8 @@ function sumOfMultiplesBelow(limit) {
   return sum;
 }
 
-const id = "#01";
-
 $(function() {
+  const id = "#01";
   let description = 'If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.\n' +
     '\n' +
     'Find the sum of all the multiples of 3 or 5 below 1000.';
