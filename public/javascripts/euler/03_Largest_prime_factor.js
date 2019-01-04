@@ -25,9 +25,9 @@ $(function() {
   $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function() {
-    console.time("LargestPrimeFactor");
+    console.time('LargestPrimeFactor');
     const result = largestPrimeFactor(600851475143);
-    let time = console.timeEnd("LargestPrimeFactor")
+    console.timeEnd('LargestPrimeFactor');
     $(id).find('textarea').html(result);
   });
 });

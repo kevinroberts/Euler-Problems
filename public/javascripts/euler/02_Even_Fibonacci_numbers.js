@@ -37,9 +37,9 @@ $(function() {
   $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function() {
-    console.time("EvenFibonacciNumbers");
+    console.time('EvenFibonacciNumbers');
     const result = evenFibonacciNumbers(4000000);
-    console.timeEnd("EvenFibonacciNumbers");
+    console.timeEnd('EvenFibonacciNumbers');
     $(id).find('textarea').html(result);
   });
 });
