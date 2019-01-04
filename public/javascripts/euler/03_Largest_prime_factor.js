@@ -15,6 +15,7 @@ const isPrime = (num) => {
 };
 
 
+// START OF NON SOLUTION CODE
 $(function() {
   const id = '#03';
   const description = 'The prime factors of 13195 are 5, 7, 13 and 29.\n' +
@@ -24,7 +25,10 @@ $(function() {
   $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function() {
+    console.time("LargestPrimeFactor");
     const result = largestPrimeFactor(600851475143);
+    let time = console.timeEnd("LargestPrimeFactor")
     $(id).find('textarea').html(result);
   });
 });
+// END NON-SOLUTION CODE
