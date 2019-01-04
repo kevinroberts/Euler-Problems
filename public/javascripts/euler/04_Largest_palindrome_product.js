@@ -1,11 +1,6 @@
 function largestPalindromeProduct(numberOfDigits) {
-  let max = 0;
-  for (let i=3; i < Math.floor(Math.sqrt(number)); i++) {
-    if ((number / i) % 1 === 0 && isPrime(i)) {
-      max = i;
-    }
-  }
-  return max;
+
+  return numberOfDigits;
 }
 
 // START OF NON SOLUTION CODE
