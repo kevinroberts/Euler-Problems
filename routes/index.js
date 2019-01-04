@@ -1,34 +1,33 @@
 const express = require('express');
+
 const router = express.Router();
 const fs = require('fs');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-
+router.get('/', (req, res) => {
   // read all the problem files from the euler folder
   const path = './public/javascripts/euler';
-  let filenames = [];
+  const filenames = [];
 
-  fs.readdir(path, function (err, items) {
-    for (var i = 0; i < items.length; i++) {
+  fs.readdir(path, (err, items) => {
+    for (let i = 0; i < items.length; i += 1) {
       filenames.push(items[i]);
       console.log(items[i]);
     }
     const regex = /^(\d{2,3})_(.+)$/;
-    let problems = [];
+    const problems = [];
 
-    filenames.map(function (filename) {
+    filenames.forEach((filename) => {
       const info = regex.exec(filename);
       const id = info[1];
-      let name = info[2].replace(/_|\.js/g, " ").trim();
+      let name = info[2].replace(/_|\.js/g, ' ').trim();
       name = name.substr(0, 1).toUpperCase() + name.substr(1, name.length);
 
-      let problem = {filename: filename, id: id, name: name};
+      const problem = { filename, id, name };
       problems.push(problem);
     });
 
-    res.render('index', {title: 'Project Euler Sandbox', problems});
-
+    res.render('index', { title: 'Project Euler Sandbox', problems });
   });
 });
 
