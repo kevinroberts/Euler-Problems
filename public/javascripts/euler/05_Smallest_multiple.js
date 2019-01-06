@@ -22,7 +22,9 @@ $(function () {
   $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
+    console.time('smallestMultiple');
     const result = smallestMultiple();
+    console.timeEnd('smallestMultiple');
     $(id).find('textarea').html(result);
   });
 });

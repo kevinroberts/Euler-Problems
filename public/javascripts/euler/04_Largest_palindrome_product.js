@@ -25,7 +25,7 @@ function largestPalindromeProduct () {
   return largestProduct;
 }
 
-function checkPalindrome (num) {
+function checkPalindrome(num) {
   let strNum = num.toString();
   let isPal = true;
   if (strNum.length < 2) {
