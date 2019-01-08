@@ -1,10 +1,12 @@
 function sumOfMultiplesBelow(limit) {
   let sum = 0;
-  _.each(_.range(0, limit), function(i) {
-    if (i % 3 == 0 || i % 5 == 0) {
+
+  for (let i = 0; i < limit; i += 1) {
+    if (i % 3 === 0 || i % 5 === 0) {
       sum += i;
     }
-  });
+  }
+
   return sum;
 }
 
@@ -16,7 +18,7 @@ $(function() {
     'Find the sum of all the multiples of 3 or 5 below 1000.';
 
   $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
-
+  // ans: 233168
   $(id).find('button').click(function() {
     const result = sumOfMultiplesBelow(1000);
     $(id).find('textarea').html(result);

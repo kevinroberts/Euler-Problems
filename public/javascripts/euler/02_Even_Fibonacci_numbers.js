@@ -14,13 +14,13 @@ function evenFibonacciNumbers(limit) {
     }
   }
 
-  _.each(_.range(0, stop), function(i) {
+  for (let i = 0; i <= stop; i += 1) {
     const fibOfi = array[i];
     if (fibOfi % 2 === 0) {
       // Fib sequence whose values do not exceed limit
       sum += fibOfi;
     }
-  });
+  }
 
   return sum;
 }

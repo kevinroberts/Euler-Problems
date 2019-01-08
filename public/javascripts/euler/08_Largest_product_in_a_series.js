@@ -15,9 +15,8 @@ function largestProduct() {
       digitSeries.push(parseInt(digits[j]));
        if (iterations === 13) {
          // multiply all the digits in series
-         product = _.reduce(digitSeries, function (memo, num) {
-           return memo * num;
-         });
+         product = digitSeries.reduce((memo, num) => memo * num);
+
          if (maxProduct < product) {
            maxProduct = product;
            maxDigitSeries = digitSeries;

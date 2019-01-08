@@ -7,7 +7,7 @@ function sumOfPrimes() {
     }
   }
 
-  const sum = _.reduce(primes, function(memo, num){ return memo + num; }, 0);
+  const sum = primes.reduce((total, num) => total + num);
   return sum;
 }
 

@@ -6,4 +6,4 @@ Run the node file under `bin/www` to launch the project.
 
 Each solution is housed in it's own JS file under the `/public/javascripts/euler` folder.
 
-Solutions use vanilla javacript along with the Underscore.js library for utility. 
+Solutions all use vanilla javacript (ES6 syntax). 
