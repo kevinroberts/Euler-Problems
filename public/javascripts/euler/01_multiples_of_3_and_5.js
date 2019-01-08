@@ -18,7 +18,6 @@ window.jQuery(function($) {
     'Find the sum of all the multiples of 3 or 5 below 1000.';
 
   $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
-  // ans: 233168
   $(id).find('button').click(function() {
     const result = sumOfMultiplesBelow(1000);
     $(id).find('textarea').html(result);
