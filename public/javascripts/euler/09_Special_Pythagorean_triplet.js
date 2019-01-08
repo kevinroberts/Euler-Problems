@@ -1,23 +1,27 @@
-function specialTriplet () {
-  let a = 0;
-  let b = 1;
-  let c = 2;
+function specialTriplet() {
+  let m = 2;
+  let n = 1;
+  // monte-carlo approach -- random n / m sample (w/Euclid's formula)
+  for (let i = 1; i < 10000; i += 1) {
+    n = Math.floor(Math.random() * 50);
+    m = Math.floor(Math.random() * 50);
+    while (n > m) {
+      n = Math.floor(Math.random() * 50);
+      m = Math.floor(Math.random() * 50);
+    }
+    const a = (m ** 2) - (n ** 2);
+    const b = 2 * m * n;
+    const c = (a ** 2) + (b ** 2);
 
-  for (let i = 1; i < 9999999; i += 1) {
+    const sum = a + b + Math.sqrt(c);
 
-      a = a+i ** 2;
-      b = b+i ** 2;
-      c = c+i ** 2;
-
-      if (a + b === c) {
-        console.log('Triplet found: ', a, b, c);
-        break;
-      }
-
+    if (sum === 1000) {
+      console.log('found triplet with sum of 1000:', a, b, Math.sqrt(c));
+      return (a * b * Math.sqrt(c));
+    }
   }
 
-
-  return smallestMultiple;
+  return 'triplet not found';
 }
 
 // START OF NON SOLUTION CODE
