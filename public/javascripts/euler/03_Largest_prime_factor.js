@@ -16,7 +16,7 @@ const isPrime = (num) => {
 
 
 // START OF NON SOLUTION CODE
-$(function() {
+window.jQuery(function($) {
   const id = '#03';
   const description = 'The prime factors of 13195 are 5, 7, 13 and 29.\n' +
     '\n' +

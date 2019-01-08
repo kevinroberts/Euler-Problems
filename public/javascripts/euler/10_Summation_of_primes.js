@@ -12,7 +12,7 @@ function sumOfPrimes() {
 }
 
 // START OF NON SOLUTION CODE
-$(function () {
+window.jQuery(function ($) {
   const id = '#10';
   const description = 'The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.\n' +
     '\n' +

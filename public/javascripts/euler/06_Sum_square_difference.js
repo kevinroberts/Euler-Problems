@@ -11,7 +11,7 @@ function sumSquares() {
 }
 
 // START OF NON SOLUTION CODE
-$(function () {
+window.jQuery(function ($) {
   const id = '#06';
   const description = 'The sum of the squares of the first ten natural numbers is,\n' +
     '\n' +

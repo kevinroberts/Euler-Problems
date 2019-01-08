@@ -47,7 +47,7 @@ function checkPalindrome(num) {
 }
 
 // START OF NON SOLUTION CODE
-$(function () {
+window.jQuery(function ($) {
   const id = '#04';
   const description = 'A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.\n' +
     '\n' +
