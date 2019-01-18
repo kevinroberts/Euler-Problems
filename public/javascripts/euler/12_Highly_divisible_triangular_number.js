@@ -30,8 +30,7 @@ function getDivisorsCnt(n) {
   return numDivisors;
 }
 
-function divisibleTriangularNumber () {
-
+function divisibleTriangularNumber() {
   let maxFactorsSize = -1;
   let maxTriNumber = 0;
 
