@@ -10,7 +10,6 @@ function lexographicalPermuations(num) {
     digits.splice(t, 1);
   }
   return ret;
-
 }
 
 // START OF NON SOLUTION CODE
