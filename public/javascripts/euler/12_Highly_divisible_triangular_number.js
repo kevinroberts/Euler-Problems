@@ -72,7 +72,7 @@ window.jQuery(function ($) {
     '\n' +
     'What is the value of the first triangle number to have over five hundred divisors?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
   $(id).find('button').click(function () {
     console.time('divisibleTriangularNumber');
     const result = divisibleTriangularNumber();

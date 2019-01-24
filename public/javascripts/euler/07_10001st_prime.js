@@ -23,7 +23,7 @@ window.jQuery(function ($) {
     '\n' +
     'What is the 10 001st prime number?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('primeN');

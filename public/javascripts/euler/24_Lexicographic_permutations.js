@@ -22,7 +22,7 @@ window.jQuery(function($) {
     '\n' +
     'What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br />'));
   $(id).find('button').click(() => {
     const result = lexographicalPermuations(1000000);
     $(id).find('textarea').html(result);

@@ -44,6 +44,17 @@
             <td><%= problem.id %></td>
             <td><h4><%= problem.name %></h4>
                 <div class="description"></div>
+                <div class="pt-2 pb-2">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#code-<%= problem.id %>" role="button" aria-expanded="false" aria-controls="code-<%= problem.id %>">
+                        Show solution code
+                    </a>
+                </div>
+                <div class="collapse" id="code-<%= problem.id %>">
+                    <div class="card card-body">
+                        <code><%- problem.code %></code>
+                    </div>
+                </div>
+
             </td>
             <td>
                 <button class="ansBtn">Run Answer Program</button>

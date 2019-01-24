@@ -53,7 +53,7 @@ window.jQuery(function ($) {
     '\n' +
     'Find the largest palindrome made from the product of two 3-digit numbers.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     const result = largestPalindromeProduct();

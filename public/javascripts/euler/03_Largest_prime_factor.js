@@ -22,7 +22,7 @@ window.jQuery(function($) {
     '\n' +
     'What is the largest prime factor of the number 600851475143 ?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function() {
     console.time('LargestPrimeFactor');

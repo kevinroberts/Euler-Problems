@@ -10,7 +10,7 @@ window.jQuery(function ($) {
   const id = '#13';
   const description = 'Work out the first ten digits of the sum of the following one-hundred 50-digit numbers. \n<a target="_blank" href="https://projecteuler.net/problem=13">See Problem 13 for the numbers</a>\n';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('largeSum');

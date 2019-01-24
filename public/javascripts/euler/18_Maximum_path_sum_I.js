@@ -45,7 +45,7 @@ window.jQuery(function ($) {
     'That is, 3 + 7 + 4 + 9 = 23.\nFind the maximum total from top to bottom of the triangle below:\n<a target="_blank" href="https://projecteuler.net/problem=18">See Problem 18 for the triangle</a>\n' +
     'NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method!';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('maxPathSum1');

@@ -14,7 +14,7 @@ window.jQuery(function($) {
     '\n' +
     'What is the total of all the name scores in the file?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
   $(id).find('button').click(() => {
     namesScores((result) => {
       $(id).find('textarea').html(result);

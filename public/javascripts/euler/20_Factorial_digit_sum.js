@@ -24,7 +24,7 @@ window.jQuery(function($) {
     'Find the sum of the digits in the number 100!\n' +
   'Note: this solution needs to be run on an up to date version of Chrome. Uses the BigInt a built-in object that provides a way to represent whole numbers larger than 2<sup>53</sup>, which is the largest number Javascript can reliably represent with the Number primitive.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
   $(id).find('button').click(function() {
     const result = sumOfFactorial(BigInt(100));
     $(id).find('textarea').html(result);

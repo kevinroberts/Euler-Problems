@@ -19,7 +19,7 @@ window.jQuery(function ($) {
     '\n' +
     'What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('smallestMultiple');

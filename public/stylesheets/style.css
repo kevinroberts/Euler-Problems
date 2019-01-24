@@ -19,3 +19,7 @@ textarea {
 .pyramid p {
   margin-bottom: 0px;
 }
+
+code {
+  white-space: pre;
+}

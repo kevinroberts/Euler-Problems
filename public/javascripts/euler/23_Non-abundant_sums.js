@@ -40,7 +40,7 @@ window.jQuery(function($) {
     '\n' +
     'Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
   $(id).find('button').click(() => {
     const result = nonAbundantSums();
     $(id).find('textarea').html(result);

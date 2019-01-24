@@ -48,7 +48,7 @@ window.jQuery(function ($) {
     '\n' +
     'Evaluate the sum of all the amicable numbers under 10000.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('calcAmicableNumbers');

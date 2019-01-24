@@ -18,7 +18,7 @@ window.jQuery(function ($) {
     '\n' +
     'Find the sum of all the primes below two million.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('sumOfPrimes');

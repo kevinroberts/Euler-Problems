@@ -34,7 +34,7 @@ window.jQuery(function($) {
     '\n' +
     'By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function() {
     console.time('EvenFibonacciNumbers');

@@ -12,18 +12,22 @@ router.get('/', (req, res) => {
   fs.readdir(path, (err, items) => {
     for (let i = 0; i < items.length; i += 1) {
       filenames.push(items[i]);
-      console.log(items[i]);
     }
     const regex = /^(\d{2,3})_(.+)$/;
     const problems = [];
 
     filenames.forEach((filename) => {
+      // extract solution code from file
+      const data = fs.readFileSync(`./public/javascripts/euler/${filename}`, 'utf8');
+      const code = data.substr(0, data.indexOf('// START')).replace(/(?:\r\n|\r|\n)/g, '<br>');
       const info = regex.exec(filename);
       const id = info[1];
       let name = info[2].replace(/_|\.js/g, ' ').trim();
       name = name.substr(0, 1).toUpperCase() + name.substr(1, name.length);
 
-      const problem = { filename, id, name };
+      const problem = {
+        filename, id, name, code,
+      };
       problems.push(problem);
     });
 

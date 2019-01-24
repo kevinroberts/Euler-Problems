@@ -116,7 +116,7 @@ window.jQuery(function ($) {
     '<li>A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.</li></ul>' +
     'How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('countSundays');

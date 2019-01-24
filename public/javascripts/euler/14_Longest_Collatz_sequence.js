@@ -43,7 +43,7 @@ window.jQuery(function ($) {
     'Which starting number, under one million, produces the longest chain?\n' +
     '\n';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('longestCollatz');

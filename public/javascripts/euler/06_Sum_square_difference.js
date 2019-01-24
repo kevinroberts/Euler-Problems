@@ -23,7 +23,7 @@ window.jQuery(function ($) {
     '\n' +
     'Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('sumSquares');

@@ -13,7 +13,7 @@ window.jQuery(function ($) {
     '\n' +
     'What is the sum of the digits of the number 2<sup>1000</sup>?\n Note: this solution needs to be run on a up to date version of Chrome.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('calculatePowerSum');

@@ -35,7 +35,7 @@ window.jQuery(function ($) {
     'There exists exactly one Pythagorean triplet for which a + b + c = 1000.\n' +
     'Find the product <em>abc</em>.';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('specialTriplet');

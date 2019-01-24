@@ -19,7 +19,7 @@ window.jQuery(function ($) {
     '\n' +
     'How many such routes are there through a 20×20 grid?';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('calculateLatticePaths');

@@ -36,7 +36,7 @@ window.jQuery(function ($) {
   const id = '#08';
   const description = 'Find the thirteen adjacent digits in the 1000-digit number that have the greatest product.\n<a target="_blank" href="https://projecteuler.net/problem=8">See Problem 8 for number</a>\n\n What is the value of this product?\n';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
 
   $(id).find('button').click(function () {
     console.time('largestProduct');
