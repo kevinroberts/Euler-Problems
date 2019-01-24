@@ -31,7 +31,7 @@ window.jQuery(function($) {
   const id = '#25';
   const description = 'What is the index of the first term in the Fibonacci sequence to contain 1000 digits?\n';
 
-  $(id).find('div').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+  $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
   $(id).find('button').click(() => {
     console.time('thousandDigitFib');
     const result = thousandDigitFib();
