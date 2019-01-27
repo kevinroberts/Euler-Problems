@@ -17,7 +17,10 @@
             crossorigin="anonymous"></script>
     <script src="/javascripts/lib/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="/javascripts/lib/datatables.min.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/prism.js"></script>
+    <link rel='stylesheet' href='/stylesheets/lib/prism.css'/>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
+
 </head>
 <body>
 
@@ -51,7 +54,7 @@
                 </div>
                 <div class="collapse" id="code-<%= problem.id %>">
                     <div class="card card-body">
-                        <code><%- problem.code %></code>
+                        <pre><code class=" language-javascript"><%- problem.code %></code></pre>
                     </div>
                 </div>
 

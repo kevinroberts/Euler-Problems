@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
     filenames.forEach((filename) => {
       // extract solution code from file
       const data = fs.readFileSync(`./public/javascripts/euler/${filename}`, 'utf8');
-      const code = data.substr(0, data.indexOf('// START')).replace(/(?:\r\n|\r|\n)/g, '<br>');
+      const code = data.substr(0, data.indexOf('// START'));
       const info = regex.exec(filename);
       const id = info[1];
       let name = info[2].replace(/_|\.js/g, ' ').trim();
