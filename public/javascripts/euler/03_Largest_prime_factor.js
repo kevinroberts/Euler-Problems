@@ -1,18 +1,38 @@
+function isPrime(n) {
+  if (n < 2) {
+    return false;
+  }
+  if (n % 2 === 0) {
+    return n === 2;
+  }
+  if (n % 3 === 0) {
+    return n === 3;
+  }
+
+  const h = Math.floor(1 + Math.sqrt(n));
+  let i = 5;
+
+  while (i <= h) {
+    if (n % i === 0) {
+      return false;
+    }
+    if (n % (i + 2) === 0) {
+      return false;
+    }
+    i += 6;
+  }
+  return true;
+}
+
 function largestPrimeFactor(number) {
   let max = 0;
-  for (let i=3; i < Math.floor(Math.sqrt(number)); i++) {
+  for (let i = 3; i < Math.floor(Math.sqrt(number)); i += 1) {
     if ((number / i) % 1 === 0 && isPrime(i)) {
       max = i;
     }
   }
   return max;
 }
-
-const isPrime = (num) => {
-  for (let i = 2, s = Math.sqrt(num); i <= s; i++)
-    if(num % i === 0) return false;
-  return num !== 1 && num !== 0;
-};
 
 
 // START OF NON SOLUTION CODE
