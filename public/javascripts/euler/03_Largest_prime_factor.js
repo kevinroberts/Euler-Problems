@@ -36,7 +36,7 @@ function largestPrimeFactor(number) {
 
 
 // START OF NON SOLUTION CODE
-window.jQuery(function($) {
+window.jQuery(($) => {
   const id = '#03';
   const description = 'The prime factors of 13195 are 5, 7, 13 and 29.\n' +
     '\n' +

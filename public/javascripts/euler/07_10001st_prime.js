@@ -17,7 +17,7 @@ function primeOfN(n) {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#07';
   const description = 'By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.\n' +
     '\n' +

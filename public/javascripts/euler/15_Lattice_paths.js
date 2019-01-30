@@ -13,7 +13,7 @@ function calculateLatticePaths(rows, columns) {
 
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#15';
   const description = 'Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.\n' +
     '\n' +

@@ -33,7 +33,7 @@ function maxPathSumRecursive(triangle, n, row) {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#18';
   const description = 'By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.\n' +
     '<div class="mx-auto pyramid" style="width: 200px">' +

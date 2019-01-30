@@ -77,7 +77,7 @@ function largestGridProduct(items) {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#11';
   const description = 'In the 20×20 grid below, four numbers along a diagonal line have been marked in red.\n' +
     '<a target="_blank" href="https://projecteuler.net/problem=11">See Problem 11 for the grid numbers</a>\n' +

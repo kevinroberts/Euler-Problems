@@ -64,7 +64,7 @@ function numberLetterCount(num) {
 
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#17';
   const description = 'If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.\n' +
     '\n' +

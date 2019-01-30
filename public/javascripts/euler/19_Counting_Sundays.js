@@ -102,7 +102,7 @@ function countSundays() {
 
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#19';
   const description = 'You are given the following information, but you may prefer to do some research for yourself.\n' +
     '<ul>' +

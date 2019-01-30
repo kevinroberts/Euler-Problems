@@ -14,7 +14,7 @@ function sumOfFactorial(limit) {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function($) {
+window.jQuery(($) => {
   const id = '#20';
   let description = '<em>n</em>! means n × (n − 1) × ... × 3 × 2 × 1\n' +
     '\n' +

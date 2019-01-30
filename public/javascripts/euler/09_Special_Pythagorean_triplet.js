@@ -25,7 +25,7 @@ function specialTriplet() {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#09';
   const description = 'A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,\n' +
     '\n' +

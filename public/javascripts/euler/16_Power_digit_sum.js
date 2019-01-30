@@ -7,7 +7,7 @@ function calculatePowerSum(power) {
 
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#16';
   const description = '215 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.\n' +
     '\n' +

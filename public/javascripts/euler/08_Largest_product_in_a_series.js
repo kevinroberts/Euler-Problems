@@ -32,7 +32,7 @@ function largestProduct () {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#08';
   const description = 'Find the thirteen adjacent digits in the 1000-digit number that have the greatest product.\n<a target="_blank" href="https://projecteuler.net/problem=8">See Problem 8 for number</a>\n\n What is the value of this product?\n';
 

@@ -28,7 +28,7 @@ function longestCollatz() {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function ($) {
+window.jQuery(($) => {
   const id = '#14';
   const description = 'The following iterative sequence is defined for the set of positive integers:\n' +
     '\n' +

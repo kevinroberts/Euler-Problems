@@ -11,14 +11,12 @@ function sumOfMultiplesBelow(limit) {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function($) {
+window.jQuery(($) => {
   const id = '#01';
-  const description = 'If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.\n' +
-    '\n' +
-    'Find the sum of all the multiples of 3 or 5 below 1000.';
-
+  const description = 'If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.\n'
+    + '\nFind the sum of all the multiples of 3 or 5 below 1000.';
   $(id).find('div.description').html(description.replace(/(?:\r\n|\r|\n)/g, '<br>'));
-  $(id).find('button').click(function() {
+  $(id).find('button').click(() => {
     const result = sumOfMultiplesBelow(1000);
     $(id).find('textarea').html(result);
   });

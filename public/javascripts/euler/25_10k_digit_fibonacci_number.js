@@ -27,7 +27,7 @@ function thousandDigitFib() {
 }
 
 // START OF NON SOLUTION CODE
-window.jQuery(function($) {
+window.jQuery(($) => {
   const id = '#25';
   const description = 'What is the index of the first term in the Fibonacci sequence to contain 1000 digits?\n';
 
